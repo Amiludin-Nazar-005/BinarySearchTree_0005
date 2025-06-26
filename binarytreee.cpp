@@ -1,15 +1,27 @@
 #include <iostream>
 using namespace std;
 
-class node {
-    public:
+class node
+{
+public:
     int info;
     node *leftchild;
     node *rightchild;
 
-    node ()
+    node()
     {
         leftchild = nullptr;
-        rightchild =nullptr;
+        rightchild = nullptr;
     }
 };
+
+class BinaryTree {
+    public:
+    node *ROOT;
+
+    BinaryTree (){
+        ROOT = nullptr;
+    }
+
+
+}
