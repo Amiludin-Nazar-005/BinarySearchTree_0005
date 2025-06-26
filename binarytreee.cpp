@@ -23,5 +23,21 @@ class BinaryTree {
         ROOT = nullptr;
     }
 
+    void insert (){
+        int x;
+        cout << "masukkan nilai : ";
+        cin >> x;
 
+        node * newnode = new node();
+        newnode ->info =x;
+
+        newnode -> leftchild = nullptr;
+        newnode ->rightchild = nullptr;
+
+        node * parent = nullptr;
+        node * currentnode = nullptr;
+        search (x, parent, currentnode);
+        
+
+    }
 }
