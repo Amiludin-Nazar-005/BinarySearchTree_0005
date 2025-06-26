@@ -115,4 +115,8 @@ public:
         postorder(ptr->rightchild);
         cout << ptr->info<< " ";
     }
+
+    bool isempty(){
+        return ROOT =nullptr;
+    }
 };
