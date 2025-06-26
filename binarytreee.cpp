@@ -72,4 +72,18 @@ public:
             currentnode =currentnode ->rightchild;
         }
     }
+
+    void inorder(node *ptr){
+        if ((isempty())){
+            cout << "three is empty"<< endl;
+            return;
+        }
+
+        if (ptr = nullptr)
+        return;
+
+        inorder (ptr ->leftchild);
+        cout << ptr->info << " ";
+        inorder (ptr -> rightchild);
+    }
 };
